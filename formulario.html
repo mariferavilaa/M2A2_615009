@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <form action method="post">
+        <table border="1" cellpadding="5">
+            <!-- Nombre del jugador -->
+            <tr>
+                <td><label for="nombre">Nombre del jugador:</label></td>
+                <td><input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3"
+                        maxlength="15"></td>
+            </tr>
+            <!-- Correo del jugador -->
+            <tr>
+                <td><label for="correo">Correo electrónico:</label></td>
+                <td><input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com"></td>
+            </tr>
+            <!-- Edad del jugador -->
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" id="edad" name="edad" required min="12" max="40" placeholder="Escribe tu edad">
+                </td>
+            </tr>
+            <!-- Nickname del jugador -->
+            <tr>
+                <td><label for="nickname">Nickname:</label></td>
+                <td><input type="text" id="nickname" name="nickname" placeholder="Escribe tu nickname" required
+                        pattern="[A-Za-z0-9]+" title="Utilice solo letras y numeros.">
+                </td>
+            </tr>
+            <!-- Categoría del jugador -->
+            <tr>
+                <td>
+                    <p>Categoría:</p>
+                </td>
+                <td>
+                    <input type="radio" id="principiante" name="categoria" value="principiante">
+                    <label for="principiante">Principiante</label>
+                    <input type="radio" id="intermedio" name="categoria" value="intermedio">
+                    <label for="intermedio">Intermedio</label>
+                    <input type="radio" id="experto" name="categoria" value="experto">
+                    <label for="experto">Experto</label>
+                </td>
+            </tr>
+            <!-- Juegos favoritos del jugador -->
+            <tr>
+                <td>
+                    <p>Juegos favoritos:</p>
+                </td>
+                <td>
+                    <input type="checkbox" id="fifa" name="juegos_favoritos" value="fifa">
+                    <label for="fifa">FIFA</label>
+                    <input type="checkbox" id="lol" name="juegos_favoritos" value="lol">
+                    <label for="lol">LoL</label>
+                    <input type="checkbox" id="minecraft" name="juegos_favoritos" value="minecraft">
+                    <label for="minecraft">Minecraft</label>
+                </td>
+            </tr>
+            <!-- Fecha de inscripción del torneo -->
+            <tr>
+                <td><label for="fecha">Fecha inscripción:</label></td>
+                <td><input type="date" id="fecha" name="fecha" min="2025-01-01" max="2025-12-31"></td>
+            </tr>
+            <!-- Botones para enviar y restablecer formulario -->
+            <td colspan="2" style="text-align:center">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </td>
+        </table>
+    </form>
+</body>
+
+</html>
